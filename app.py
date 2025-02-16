@@ -16,6 +16,13 @@
 # ]
 # ///
 
+import sys
+sys.path.append(".")  # Ensures the current directory is in Python's module search path
+
+import tasksA  # Now this should work
+import tasksB  # Now this should work
+
+
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import PlainTextResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
